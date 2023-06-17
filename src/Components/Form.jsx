@@ -34,8 +34,9 @@ function Form() {
         setInputstore([...inputStore,{FullName,File,Technology}])
         console.log(inputData)
         setInputdata({FullName:"",File:"",Technology:[]})
-          context.entries.push(inputData)
-          if(FullName!==""&&File!==""&&Technology!==[]){   
+        if(FullName!==""&&File!==""&&Technology!==[]){   
+            context.entries.push(inputData)
+            alert(`Hey ${inputData.FullName},Welcome To Staffing System`)
             navigate('/data')
           }
     }

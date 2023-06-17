@@ -2,7 +2,7 @@ import "./App.css";
 import Form from "./Components/Form";
 import Data from "./Components/Data";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { createContext, useState } from "react";
+import { createContext, useState} from "react";
 export const DataContext = createContext();
 function App() {
   const [data, setData] = useState([
