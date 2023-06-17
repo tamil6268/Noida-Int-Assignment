@@ -34,8 +34,10 @@ function Form() {
         setInputstore([...inputStore,{FullName,File,Technology}])
         console.log(inputData)
         setInputdata({FullName:"",File:"",Technology:[]})
-            context.entries.push(inputData)
+          context.entries.push(inputData)
+          if(FullName!==""&&File!==""&&Technology!==[]){   
             navigate('/data')
+          }
     }
   return (
     <div id="body">
